@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind and daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom Style -->
+    <style>
+        *{font-family: 'Manrope', sans-serif;}
+    </style>
+    <!-- Customize Configuration -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primaryColor: '#FF4240',
+                darkColor: '#131318',
+                whiteColor: '#FFF',
+                lightDark: ' #FFFFFF99',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+    <header class="container m-auto">
+        <!-- Navbar Section Start -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Pages</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="text-[36px] font-extrabold">Hockey<span class="text-primaryColor">’</span>s</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex justify-center">
+                <ul class="menu menu-horizontal px-1 text-darkColor flex gap-[44px]">
+                    <a class="hover:text-primaryColor" href="#">Home</a>
+                    <a class="hover:text-primaryColor" href="#">About</a>
+                    <a class="hover:text-primaryColor" href="#">Pages</a>
+                    <a class="hover:text-primaryColor" href="#">Blog</a>
+                    <a class="hover:text-primaryColor" href="#">Contact</a>
+                </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle text-[#89898B] mr-[24px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+                    <button class="py-[15px] px-[24px] bg-primaryColor text-[20px] font-[700] text-whiteColor rounded-[8px]">Get Ticket</button>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Section End -->
+        <!-- Banner Section Start -->
+        <div class="carousel w-full rounded-[16px]">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/slider-1.png" class="w-full relative" />
+              <div class="absolute right-[32px] bottom-[32px] bg-darkColor p-[32px] rounded-[16px]">
+                <h1 class="text-[24px] font-extrabold text-whiteColor">Meet all the heroes from the field</h1>
+                <p class="text-[16px] text-lightDark max-w-[502px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/slider-2.jpg" class="w-full" />
+              <div class="absolute right-[32px] bottom-[32px] bg-darkColor p-[32px] rounded-[16px]">
+                <h1 class="text-[24px] font-extrabold text-whiteColor">Meet all the heroes from the field</h1>
+                <p class="text-[16px] text-lightDark max-w-[502px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="Images/slider-3.jpg" class="w-full" />
+              <div class="absolute right-[32px] bottom-[32px] bg-darkColor p-[32px] rounded-[16px]">
+                <h1 class="text-[24px] font-extrabold text-whiteColor">Meet all the heroes from the field</h1>
+                <p class="text-[16px] text-lightDark max-w-[502px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+        </div>
+        <!-- Banner Section End -->
+    </header>
+</body>
+</html>
