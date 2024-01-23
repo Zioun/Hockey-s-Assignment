@@ -67,33 +67,26 @@
                 </ul>
                 </div>
                 <div class="navbar-end">
-                    <button class="btn btn-ghost btn-circle text-[#89898B] mr-[24px]">
+                    <button class="btn btn-ghost hidden md:block btn-circle text-[#89898B] mr-[24px]">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                     </button>
-                    <button class="py-[15px] px-[24px] bg-primaryColor text-[20px] font-[700] text-whiteColor rounded-[8px]">Get Ticket</button>
+                    <button class="py-[8px] px-[17px] md:py-[15px] md:px-[24px] bg-primaryColor text-[20px] font-[700] text-whiteColor rounded-[8px]">Get Ticket</button>
                 </div>
             </div>
         </nav>
         <!-- Navbar Section End -->
         <!-- Banner Section Start -->
-        <div class="carousel w-full rounded-[16px]">
+        <div class="relative">
+          <div class="carousel w-full rounded-[16px] relative">
             <div id="slide1" class="carousel-item relative w-full">
-              <img src="Images/slider-1.png" class="w-full relative" />
-              <div class="absolute right-[32px] bottom-[32px] bg-darkColor p-[32px] rounded-[16px]">
-                <h1 class="text-[24px] font-extrabold text-whiteColor">Meet all the heroes from the field</h1>
-                <p class="text-[16px] text-lightWhite max-w-[502px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
-              </div>
-              <div class="absolute flex gap-[16px] transform -translate-y-1/2 left-5 bottom-[5px]">
+              <img src="Images/slider-1.png" class="w-full" />
+              <div class="absolute flex gap-[12px] md:gap-[16px] left-[50%] -translate-x-[50%] md:-translate-x-[0%] transform md:-translate-y-1/2 md:left-5 bottom-[20px] md:bottom-[0px]">
                 <a href="#slide4" class="btn btn-circle bg-darkColor text-whiteColor border-none hover:bg-darkColor">❮</a> 
                 <a href="#slide2" class="btn btn-circle bg-darkColor text-whiteColor border-none hover:bg-darkColor">❯</a>
               </div>
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
               <img src="Images/slider-2.jpg" class="w-full" />
-              <div class="absolute right-[32px] bottom-[32px] bg-darkColor p-[32px] rounded-[16px]">
-                <h1 class="text-[24px] font-extrabold text-whiteColor">Meet all the heroes from the field</h1>
-                <p class="text-[16px] text-lightWhite max-w-[502px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
-              </div>
               <div class="absolute flex gap-[16px] transform -translate-y-1/2 left-5 bottom-[5px]">
                 <a href="#slide1" class="btn btn-circle bg-darkColor text-whiteColor border-none hover:bg-darkColor">❮</a> 
                 <a href="#slide3" class="btn btn-circle bg-darkColor text-whiteColor border-none hover:bg-darkColor">❯</a>
@@ -101,15 +94,18 @@
             </div> 
             <div id="slide3" class="carousel-item relative w-full">
               <img src="Images/slider-3.jpg" class="w-full" />
-              <div class="absolute right-[32px] bottom-[32px] bg-darkColor p-[32px] rounded-[16px]">
-                <h1 class="text-[24px] font-extrabold text-whiteColor">Meet all the heroes from the field</h1>
-                <p class="text-[16px] text-lightWhite max-w-[502px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
-              </div>
               <div class="absolute flex gap-[16px] transform -translate-y-1/2 left-5 bottom-[5px]">
                 <a href="#slide2" class="btn btn-circle bg-darkColor text-whiteColor border-none hover:bg-darkColor">❮</a> 
                 <a href="#slide1" class="btn btn-circle bg-darkColor text-whiteColor border-none hover:bg-darkColor">❯</a>
               </div>
-            </div> 
+            </div>
+          </div>
+          <!-- Banner Badge Start -->
+          <div class="md:absolute top-[310px] md:top-auto md:right-[32px] md:bottom-[32px] bg-darkColor p-[32px] rounded-[16px] max-w-full">
+            <h1 class="text-[24px] font-extrabold text-whiteColor">Meet all the heroes from the field</h1>
+            <p class="text-[16px] text-lightWhite md:max-w-[502px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+          </div>
+          <!-- Banner Badge End -->
         </div>
         <!-- Banner Section End -->
     </header>
@@ -151,22 +147,22 @@
             <p class="max-w-[607px] text-[16px] m-auto mt-[24px] text-lightDark">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
           </div>
           <div class="grid grid-cols-2 gap-[24px]">
-            <div class="top-[95px] left-[40px] imgFixd rounded-[16px] overflow-hidden" style="background-image: url('Images/program-1.png');">
-              <div class="pt-[95px] pb-[40px] px-[40px] bg-[#13131880]">
+            <div class="top-[95px] left-[40px] imgFixd rounded-[16px] overflow-hidden col-span-2 md:col-span-1" style="background-image: url('Images/program-1.png');">
+              <div class="pt-[24px] pb-[24px] px-[24px] md:pt-[95px] md:pb-[40px] md:px-[40px] bg-[#13131880]">
                 <h1 class="font-extrabold text-[28px] text-whiteColor">Junior Program</h1>
                 <p class="text-white max-w-[495px] mt-[16px] mb-[24px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
                 <button class="bg-primaryColor text-whiteColor py-[10px] px-[22px] font-bold rounded-[8px]">Register Now!</button>
               </div>
             </div>
-            <div class="top-[95px] left-[40px] imgFixd rounded-[16px] overflow-hidden" style="background-image: url('Images/program-2.png');">
-              <div class="pt-[95px] pb-[40px] px-[40px] bg-[#13131880]">
+            <div class="top-[95px] left-[40px] imgFixd rounded-[16px] overflow-hidden col-span-2 md:col-span-1" style="background-image: url('Images/program-2.png');">
+              <div class="pt-[24px] pb-[24px] px-[24px] md:pt-[95px] md:pb-[40px] md:px-[40px] bg-[#13131880]">
                 <h1 class="font-extrabold text-[28px] text-whiteColor">Junior Program</h1>
                 <p class="text-white max-w-[495px] mt-[16px] mb-[24px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
                 <button class="bg-primaryColor text-whiteColor py-[10px] px-[22px] font-bold rounded-[8px]">Register Now!</button>
               </div>
             </div>
             <div class="top-[95px] left-[40px] imgFixd rounded-[16px] overflow-hidden col-span-2" style="background-image: url('Images/program-3.png');">
-              <div class="pt-[207px] pb-[40px] px-[40px] bg-[#13131880]">
+              <div class="pt-[24px] pb-[24px] px-[24px] md:pt-[207px] md:pb-[40px] md:px-[40px] bg-[#13131880]">
                 <h1 class="font-extrabold text-[28px] text-whiteColor">Junior Program</h1>
                 <p class="text-white max-w-[495px] mt-[16px] mb-[24px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
                 <button class="bg-primaryColor text-whiteColor py-[10px] px-[22px] font-bold rounded-[8px]">Register Now!</button>
@@ -181,7 +177,7 @@
             <h1 class="text-[36px] font-extrabold">Our New Products</h1>
             <p class="max-w-[607px] text-[16px] m-auto mt-[24px] text-lightDark">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
           </div>
-          <div class="grid grid-cols-2 gap-[24px]">
+          <div class="grid md:grid-cols-2 gap-[24px]">
             <!-- Product 1 -->
             <div class="card lg:card-side bg-base-100 border p-[24px]">
               <figure><img class="w-full md:h-[250px] lg:w-[180px] lg:h-[172px]" src="Images/product-1.png" alt="Album"/></figure>
@@ -476,20 +472,20 @@
             </div>
             <div class="col-span-12 lg:col-span-7">
               <form>
-                <div class="grid grid-cols-2 gap-[24px]">
-                  <div>
+                <div class="grid md:grid-cols-2 gap-[24px]">
+                  <div class="col-span-2">
                     <h1 class="font-bold text-[20px]">Your Name</h1>
                     <input class="w-full h-[64px] bg-[#1313180B] outline-none pl-[20px] rounded-[12px] mt-[16px]" type="text" placeholder="Enter your full name">
                   </div>
-                  <div>
+                  <div class="col-span-2">
                     <h1 class="font-bold text-[20px]">Your Email</h1>
                     <input class="w-full h-[64px] bg-[#1313180B] outline-none pl-[20px] rounded-[12px] mt-[16px]" type="text" placeholder="Enter your full email">
                   </div>
-                  <div>
+                  <div class="col-span-2">
                     <h1 class="font-bold text-[20px]">Subject</h1>
                     <input class="w-full h-[64px] bg-[#1313180B] outline-none pl-[20px] rounded-[12px] mt-[16px]" type="text" placeholder="Enter your full subject">
                   </div>
-                  <div>
+                  <div class="col-span-2">
                     <h1 class="font-bold text-[20px]">Phone Number</h1>
                     <input class="w-full h-[64px] bg-[#1313180B] outline-none pl-[20px] rounded-[12px] mt-[16px]" type="text" placeholder="Enter your full phone number">
                   </div>
